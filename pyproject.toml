@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ma_mmm_project"
+version = "0.1.0"
+description = "Marketing Mix Modeling (MMM) from scratch and framework comparisons"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Miguel Angel" }
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "seaborn",
+  "scikit-learn",
+  "statsmodels",
+  "joblib",
+  "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyter",
+  "ipykernel",
+  "pytest",
+  "ruff",
+  "black",
+]
+api = [
+  "fastapi",
+  "uvicorn",
+]
+app = [
+  "streamlit",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

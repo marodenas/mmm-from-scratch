@@ -1,0 +1,7 @@
+project:
+  name: my_mmm_project
+  timezone: Europe/Madrid
+data:
+  target: target
+  date_col: date
+  frequency: weekly   # daily | weekly

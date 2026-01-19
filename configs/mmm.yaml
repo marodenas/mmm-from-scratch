@@ -1,0 +1,8 @@
+mmm:
+  seed: 42
+  holdout_weeks: 8
+  channels: []
+  adstock:
+    type: geometric
+  saturation:
+    type: hill

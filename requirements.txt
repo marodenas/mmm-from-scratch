@@ -1,0 +1,8 @@
+# Minimal runtime deps (optional if you use pyproject installs)
+numpy
+pandas
+matplotlib
+scikit-learn
+statsmodels
+joblib
+pyyaml
