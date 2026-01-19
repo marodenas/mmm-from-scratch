@@ -106,6 +106,21 @@ The `comparisons/` folder introduces external frameworks once the fundamentals a
 
 ---
 
+## Notebook philosophy
+
+Notebooks in this project are **decision-driven rather than exploratory logs**.
+
+They are designed to clearly communicate:
+- why modeling choices are made
+- what assumptions are taken
+- what limitations exist
+
+For details on notebook structure and communication style, see:
+
+➡️ `docs/notebook_style_guide.md`
+
+---
+
 ## Artifacts
 
 The `artifacts/` folder contains **final outputs**, not exploratory work.
