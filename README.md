@@ -53,8 +53,9 @@ notebooks/
   02_baseline_model.ipynb
   03_adstock.ipynb
   04_saturation.ipynb
-  05_validation.ipynb
-  06_interpretation_next_steps.ipynb
+  05_ridge_regularization.ipynb
+  06_validation.ipynb
+  07_interpretation_next_steps.ipynb
 
   comparisons/
     10_robyn_setup_and_run.ipynb
@@ -94,13 +95,14 @@ writing/
 The notebooks are intentionally **sequential**.  
 Each notebook represents a clear step in the learning process and can be read independently.
 
-- `00` – Problem framing and assumptions
-- `01` – Data audit and exploratory analysis
-- `02` – Baseline MMM (no carryover, no saturation)
-- `03` – Adstock (carryover effects)
-- `04` – Saturation (diminishing returns)
-- `05` – Temporal validation and diagnostics
-- `06` – Interpretation, limitations, and next steps
+- `00_problem_framing.ipynb` – Problem framing, KPI definition, scope, assumptions & risks  
+- `01_data_audit_eda.ipynb` – Data audit, EDA, missingness, and time-series selection  
+- `02_baseline_mmm.ipynb` – Baseline MMM (OLS, no carryover, no saturation)  
+- `03_adstock_carryover.ipynb` – Adstock (carryover effects) + theta sensitivity  
+- `04_saturation_diminishing_returns.ipynb` – Saturation (Hill) + alpha sensitivity  
+- `05_ridge_regularization.ipynb` – Ridge regression (regularization) + coefficient paths  
+- `06_temporal_validation.ipynb` – Rolling-origin / walk-forward validation + diagnostics  
+- `07_interpretation_next_steps.ipynb` – Interpretation, limitations, decomposition, and next steps
 
 The `comparisons/` folder introduces external frameworks once the fundamentals are well understood.
 
